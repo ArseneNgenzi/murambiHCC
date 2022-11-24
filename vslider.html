@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="./images/logo.jpg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="description" content="Murambi Honey" />
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<link rel="stylesheet" href="index.css" />
+	<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+	<title>Murambi Honey</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("hPWnzAmKyuf0rpatB");
+		})();
+	</script>
+</head>
+
+<body>
+	<!-- VIEW HOW MUCH IS SCROLLED -->
+
+	<div class="container header sec " id="home">
+		<div class="scroll-viewer">
+			<div class="scroll-viewer-fill"></div>
+		</div>
+		<nav class="head-nav">
+			<div class="logo">
+				<img src="./images/logo.jpg" alt="logo" srcset="" />
+			</div>
+			<div class="links">
+				<ul>
+					<li class="click-close-menu">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2a8b47"
+							class="bi bi-house-door-fill" viewBox="0 0 16 16">
+							<path
+								d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+						</svg>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<div class="dropdown">
+							<button class="dropbtn">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2a8b47"
+									class="bi bi-file-person-fill" viewBox="0 0 16 16">
+									<path
+										d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
+								</svg>
+								About
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+									class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+									<path
+										d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+								</svg>
+							</button>
+							<div class="dropdown-content">
+								<a href="#about" class="click-close-menu">Who We Are</a>
+								<a href="#about" class="click-close-menu">Partners</a>
+								<a href="#about" class="click-close-menu">Work Process</a>
+							</div>
+						</div>
+					</li>
+					<!-- <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2a8b47" class="bi bi-file-person-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+          </svg> <a href="#about">About</a> </li> -->
+
+					<!-- <li> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2a8b47" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+            <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
+          </svg> <a href="#process">Process</a> </li> -->
+
+					<li class="click-close-menu">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2a8b47"
+							class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+							<path
+								d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z" />
+							<path
+								d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z" />
+						</svg>
+						<a href="#contact"> Contact</a>
+					</li>
+				</ul>
+				<span><img src="./images/close.svg" alt="" width="30px" style="margin: 24px;" id="hide-menu"></span>
+			</div>
+			<div class="burger">
+				<img src="./images/burger.svg" alt="">
+			</div>
+		</nav>
+		<!-- <section class="sec" id="home">home</section> -->
+	</div>
+
+	<nav class="navbar">
+		<ul>
+			<li>
+				<a href="#home" class="dot active" data-scroll="home">
+					<span>home</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#about" class="dot" data-scroll="about">
+					<span>about</span>
+				</a>
+			</li>
+
+			<!-- <li>
+    <a href="#process" class="dot" data-scroll="process">
+      <span>process</span>
+    </a>
+  </li> -->
+
+			<li>
+				<a href="#images" class="dot" data-scroll="images">
+					<span>images</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#contact" class="dot" data-scroll="contact">
+					<span>contact</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+
+	<!-- HOME SECTION -->
+	<section class="" id="banner">
+		<div class="container">
+			<div class="banner-content">
+				<h6>the infrastructure behind our honey</h6>
+				<h1>Modern Beehives</h1>
+				<p>
+					The community of our beekeepers have been equiped with modern
+					beehives provided by Africa Development Bank
+				</p>
+				<div class="banner-content-btns">
+					<button class="check-process">
+						<a href="#about"> Process</a>
+					</button>
+
+					<button class="check-partners">
+						<a href="#about"> Partners</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container"> </div>
+
+
+	<!-- ABOUT SECTION -->
+	<div class="middle">
+		<h1 id="">About Us</h1>
+		<div class="middle-horizontal-line"></div>
+	</div>
+	<section class="sec about" id="about">
+		<div class="container">
+			<div class="tabs">
+				<div class="tabs__head">
+					<div class="tabs__toggle is-active">
+						<span class="tabs__name">Who We Are</span>
+					</div>
+					<div class="tabs__toggle">
+						<span class="tabs__name">Projects</span>
+					</div>
+					<div class="tabs__toggle">
+						<span class="tabs__name">Our Partners</span>
+					</div>
+					<div class="tabs__toggle">
+						<span class="tabs__name">Process</span>
+					</div>
+				</div>
+				<div class="tabs__body">
+					<div class="tabs__content  whoweare  is-active">
+						<div class="tabs__title__wrapper">
+							<div class="tabs__title__container">
+								<p> Who We Are</p>
+							</div>
+						</div>
+						<div class="tabs__subs">
+							<h5>Summary</h5>
+						</div>
+						<p class="tabs__text">
+							SERUKA is a national Non-Governmental Organization founded by 173 women in 1992 with an aim
+							and concern to fight Gender Based violence (GBV) and develop a woman economically,
+							psychologically and culturally through promoting girls’ education and national political
+							involvement. SERUKA was granted legal Personality by the Ministerial Order n° 174/05 of 22nd
+							May, 1992 which was revised by the Ministerial Order n° 93/11 of 14th September 2005 (OG
+							n°22 of 15/11/2008). SERUKA Organization is currently recognized and registered with the
+							Rwanda Governance Board (RGB) by the Official Gazette n°49 of 5/12/2016.
+
+							<br><br>
+
+							SERUKA enjoys strong networking with government institutions including all districts of
+							operations, ministry of local government; Gender and Family Promotion; Agriculture and
+							Animal Resources, Rwanda Agriculture Board; Rwanda Cooperative Agency, Rwanda Governance
+							Board and with many international and national NGOs.
+							SERUKA produced country leaders at different levels including one of the major Founders, the
+							late Prime Mister Uwiringiyimana Agathe (killed during the 1994 Tutsi genocide). SERUKA is a
+							founder member of women’s umbrella organization, Profemmes Twesehamwe (PFTH) SERUKA, an
+							active member of Conseil de Concertation des Organizations d’Appui aux Initaiatives de Base
+							(CCOIAB), an Umbrella for Civil society Organisations in Rwanda and also a member of Reseau
+							Femmes Africaines pour le Développement Durable (REFADD).
+						</p>
+						<div class="tabs__subs">
+							<h5>Mission</h5>
+						</div>
+						<p class="tabs__text">
+							SERUKA mission focuses on strengthening key areas to be implemented to ensure a robust,
+							coherent, coordinated and comprehensive response to GBV, build confidence, raise self-esteem
+							and promote women and girls social, educational economic and political development
+						</p>
+						<div class="tabs__subs">
+							<h5>Vision</h5>
+						</div>
+
+						<p class="tabs__text">
+							SERUKA strives to create a future in which all women will be viewed and treated equally as
+							men, in all aspects of life: civil, political, economic, social, and cultural. Our vision is
+							that all women become self-sustaining and remain well recognized in their community and
+							truly empowered
+						</p>
+
+						<div class="tabs__subs">
+							<h5>Objectives</h5>
+						</div>
+						<h6 class="objectives-subs">Main Objectives</h6>
+						<p class="tabs__text">
+							SERUKA aims at Women’s social economic promotion through promotion of girl education and
+							fight against Gender Based Violence(GBV)
+						</p>
+						<h6 class="objectives-subs">Specific Objectives</h6>
+						<p class="tabs__text">
+						<ul class="specific-objectives">
+							<li>To create an awareness and better understanding among individuals, public and relevant
+								agencies on the issues of violence against women and the underlying inequalities</li>
+							<li>To fight malnutrition among families mainly the children and pregnant women</li>
+							<li>To prevent early pregnancies of girls in schools which is a dominant reason for school
+								drop-outs</li>
+							<li>To raise confidence among girls who faced early pregnancies to fight back and develop
+								themselves back to the economic peak</li>
+							<li>To undertake and encourage research into any of the factors that contribute to the
+								inequality and subordination of women</li>
+							<li>To promote economic development of women and self-sustaining</li>
+							<li>To promote education of girls and build their confidence in contribution of the
+								development of the country politically, economically and culturally</li>
+							<li>To Develop and promote educational training and action programs for women, especially
+								the
+								under-privileged</li>
+							<li>To undertake and advocate under the partnership of other non-government organization the
+								eradication of factors that contribute to inequality and subordination of women</li>
+						</ul>
+
+						</p>
+					</div>
+					<div class="tabs__content ourprojects">
+						<div class="tabs__title__wrapper">
+							<div class="tabs__title__container">
+								<p> Our Projects</p>
+							</div>
+						</div>
+						<div class="projects__subs">
+							<h5>Rwanda Honey Value Chain Project</h5>
+						</div>
+						<p class="tabs__text">
+							<span>Project Title:</span> Rwanda Honey Value Chain Project: Enabling women beekeepers to
+							access market <br>
+							<span>Partner/Funding Agent:</span> Africa Development Bank (AfDB) <br>
+							<span>Project Execution Period: </span> Feb 2017 – up to date
+						</p>
+						<div class="projects__subs">
+							<h5>Women in Beekeeping as a strategy to poverty reduction</h5>
+						</div>
+						<p class="tabs__text">
+							<span>Project Title:</span>Involvement of women and people without land in Beekeeping as a
+							strategy to poverty reduction <br>
+							<span>Partner/Funding Agent:</span>Belgium Embassy in Rwanda <br>
+							<span>Project Execution Period:</span> 2009 – 2013
+						</p>
+						<div class="projects__subs">
+							<h5>Strengthening capacities of Beekeepers cooperatives</h5>
+						</div>
+						<p class="tabs__text">
+							<span>Project Title:</span> Strengthening capacities of Beekeepers cooperatives around
+							Akagera
+							National park <br>
+							<span>Partner/Funding Agent:</span>SNV <br>
+							<span>Project Execution Period:</span> 2009 – 2012
+						</p>
+						<div class="projects__subs">
+							<h5>Environment Protection with Bamboos</h5>
+						</div>
+						<p class="tabs__text">
+							<span>Project Title: </span> Environment Protection with Bamboos and Rattan at Home Project
+							<br>
+							<span>Partner/Funding Agent:</span> CARPE-UICN <br>
+							<span>Project Execution Period:</span> 2008 – 2009
+						</p>
+						<div class="projects__subs">
+							<h5>Much Honey on the Market for Home food security</h5>
+						</div>
+						<p class="tabs__text">
+							<span>Project Title:</span>Much Honey on the Market for Home food security <br>
+							<span>Partner/Funding Agent:</span> ACDI-VOCA <br>
+							<span>Project Execution Period:</span> 2008 – 2009
+						</p>
+
+
+					</div>
+					<div class="tabs__content ourpartners">
+						<div class="tabs__title__wrapper">
+							<div class="tabs__title__container">
+								<p> Partners</p>
+							</div>
+						</div>
+						<p class="tabs__text">
+							Over the last 15 years, SERUKA got funds from some major donors to implement
+							environmental protection projects, especially beekeeping projects where women
+							beekeepers participate in forest management -afforestation and re-afforestation
+						<p class="tabs__text">
+							Here are the partners we have worked with over the past 15 years:
+						</p>
+
+						<ol style="list-style: none;">
+							<li style="font-size: 0.9rem; padding: 0.5rem 0;"><span
+									style="color: #2a8b47; font-weight: bold;">Africa Development Bank (AfDB)</span> :
+								Feb 2017 – Up To Date</li>
+							<li style="font-size: 0.9rem; padding: 0.5rem 0;"><span
+									style="color: #2a8b47; font-weight: bold;">Belgium Embassy in Rwanda</span> : 2009 –
+								2013</li>
+							<li style="font-size: 0.9rem; padding: 0.5rem 0;"><span
+									style="color: #2a8b47; font-weight: bold;">SNV</span> : 2009 – 2012</li>
+							<li style="font-size: 0.9rem; padding: 0.5rem 0;"><span
+									style="color: #2a8b47; font-weight: bold;">CARPE-UICN</span> : 2008 – 2009</li>
+							<li style="font-size: 0.9rem; padding: 0.5rem 0;"><span
+									style="color: #2a8b47; font-weight: bold;">ACDI-VOCA</span> : 2008 – 2009</li>
+						</ol>
+
+
+						</p>
+
+					</div>
+					<div class="tabs__content ourprocess">
+						<div class="tabs__title__wrapper">
+							<div class="tabs__title__container">
+								<p> Process</p>
+							</div>
+						</div>
+						<p class="tabs__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Pariatur, voluptates nihil reprehenderit architecto deleniti a
+							blanditiis dolore voluptate cupiditate saepe sequi, quo iusto
+							tempora itaque excepturi! Sunt optio nihil minus?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Pariatur, voluptates nihil reprehenderit architecto deleniti a
+							blanditiis dolore voluptate cupiditate saepe sequi, quo iusto
+							tempora itaque excepturi! Sunt optio nihil minus?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Pariatur, voluptates nihil reprehenderit architecto deleniti a
+							blanditiis dolore voluptate cupiditate saepe sequi, quo iusto
+							tempora itaque excepturi! Sunt optio nihil minus?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Pariatur, voluptates nihil reprehenderit architecto deleniti a
+							blanditiis dolore voluptate cupiditate saepe sequi, quo iusto
+							tempora itaque excepturi! Sunt optio nihil minus?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Pariatur, voluptates nihil reprehenderit architecto deleniti a
+							blanditiis dolore voluptate cupiditate saepe sequi, quo iusto
+							tempora itaque excepturi! Sunt optio nihil minus?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Pariatur, voluptates nihil reprehenderit architecto deleniti a
+							blanditiis dolore voluptate cupiditate saepe sequi, quo iusto
+							tempora itaque excepturi! Sunt optio nihil minus?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Pariatur, voluptates nihil reprehenderit architecto deleniti a
+							blanditiis dolore voluptate cupiditate saepe sequi, quo iusto
+							tempora itaque excepturi! Sunt optio nihil minus?
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="sec" id="process">Process</section> -->
+
+	<div class="middle">
+		<h1>Few Images</h1>
+		<div class="middle-horizontal-line"></div>
+	</div>
+
+	<section class="sec" id="images">
+
+		<div class="container">
+			<div class="main">
+				<img src="./images/bee3.jpg" alt="">
+				<img src="./images/hon1.jpg" alt="">
+				<img src="./images/bee5.jpg" alt="">
+				<img src="./images/bee4.jpg" alt="">
+				<img src="./images/hon3.jpg" alt="">
+				<img src="./images/hon2.jpg" alt="">
+
+			</div>
+		</div>
+
+
+
+
+
+	</section>
+
+
+
+
+	<!-- <section class="sec contact-section" id="contact">
+        
+        <div class="container">
+      
+        <div class="middle">
+          <h1>contact us</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form id="contact-form" role="form">
+              <div class="form-feedback-container text-center">
+                <p class="submit-feedback "></p>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-control form-control-name" name="name" id="name" placeholder="Type your names here..." type="text" required="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control form-control-email" name="email" id="email" placeholder="Type your email here..." type="email" required="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control form-control-message" name="message" id="message" placeholder="Write your message here..." rows="10" required=""></textarea>
+              </div>
+              <div class="d-flex justify-content-end p-3 pe-0"><br>
+                <button id="sendBtn" class="btn btn-dark solid blank " type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+
+
+
+
+
+        
+      </section> -->
+
+	<div class="middle">
+		<h1>contact us</h1>
+		<div class="middle-horizontal-line"></div>
+	</div>
+	<section class="sec contact" id="contact">
+
+		<div class="background-color-container">
+
+
+			<div class="container">
+				<div class="contact-container">
+					<div class="left"><img src="./images/hon2.jpg" alt=""></div>
+					<div class="right">
+						<h3>Get In Touch</h3>
+						<div class="email-us">
+							<h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(214, 180, 8)"
+									class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+									<path
+										d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+									<path
+										d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+								</svg> EMAIL US</h5>
+							<p>Our Friendly Team Is Here To Help</p>
+							<p>
+								<a href="mailto:serukaasbl@gmail.com">serukaasbl@gmail.com</a> <br>
+								<a href="mailto:serukaasbl@yahoo.fr">serukaasbl@yahoo.fr</a>
+							</p>
+						</div>
+						<div class="locate-us">
+							<h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(214, 180, 8)"
+									class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+									<path
+										d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+								</svg> OFFICE</h5>
+							<p>come say hello to our office</p>
+							<p>north province, rulindo, murambi</p>
+						</div>
+						<div class="call-us">
+							<h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(214, 180, 8)"
+									class="bi bi-telephone-inbound-fill" viewBox="0 0 16 16">
+									<path fill-rule="evenodd"
+										d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0z" />
+								</svg> call US</h5>
+							<p>Monday - Friday</p>
+							<p>8:00 am - 6:00 pm</p>
+							<p>
+								<a href="tel:+250788410850">+250 788 410 850</a><br>
+								<a href="tel:+250788502074">+250 788 502 074</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- BACK TO TOP BUTTON  -->
+	<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+		<button class="btn btn-primary" title="Back to Top">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+				class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+				<path
+					d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+			</svg>
+		</button>
+	</div>
+
+	<section class="footer" id="">
+		<div class="container">
+			<div class="footer-links">
+				<a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+						class="bi bi-house-door-fill" viewBox="0 0 16 16">
+						<path
+							d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z">
+						</path>
+					</svg> Home</a>
+				<a href="#about"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+						class="bi bi-file-person-fill" viewBox="0 0 16 16">
+						<path
+							d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z">
+						</path>
+					</svg> About</a>
+				<a href="#images"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-images" viewBox="0 0 16 16">
+						<path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+						<path
+							d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z" />
+					</svg> Images</a>
+			</div>
+
+			<div class="copyright">
+				Copyright @ Murambi HCC 2022
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+	<script src="./index.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
