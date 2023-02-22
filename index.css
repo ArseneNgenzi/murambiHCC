@@ -472,7 +472,8 @@ p {
 }
 .banner-content .afdb-logo img {
 	width: 100%;
-	border: #2a8b47 solid 2px;
+	border: #2a8b47 solid 1px;
+	border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 991px) {
