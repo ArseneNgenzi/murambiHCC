@@ -416,6 +416,7 @@ p {
 	margin-top: 10rem;
 	border: 1px solid #000;
 	border-radius: 0.3rem;
+	/* position: ; */
 }
 
 .banner-content * {
@@ -464,6 +465,14 @@ p {
 .banner-content-btns button a {
 	color: #fff;
 	text-decoration: none;
+}
+
+.banner-content .afdb-logo {
+	/* border: 1px solid #000; */
+}
+.banner-content .afdb-logo img {
+	width: 100%;
+	border: #2a8b47 solid 2px;
 }
 
 @media only screen and (max-width: 991px) {
