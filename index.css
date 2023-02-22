@@ -349,7 +349,7 @@ p {
 	/* background-color: #fff; */
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
 	.dropbtn {
 		background-color: transparent;
 		border-bottom: 0;
