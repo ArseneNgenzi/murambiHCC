@@ -93,8 +93,10 @@ p {
 	justify-content: space-between;
 	background-color: #fff;
 	width: 100%;
-	padding-top: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 	z-index: 100;
+	align-items: center;
 
 }
 
@@ -121,8 +123,14 @@ p {
 	}
 }
 
+.head-nav .logo {
+	background-color: rgba(42, 139, 71, 0.3);
+	padding: 1rem;
+	border-radius: 50%;
+}
+
 .head-nav .logo img {
-	width: 6.25rem;
+	width: 4rem;
 }
 
 .links {
@@ -169,7 +177,7 @@ p {
 	width: 40px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
 
 	.links {
 		position: absolute;
@@ -226,7 +234,7 @@ p {
 }
 
 /* HIDE SIDE NAVIGATOR BUTTONS WHEN WIDTH IS 610PX AND LESS */
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 768px) {
 	.navbar {
 		display: none;
 	}
